@@ -1,0 +1,164 @@
+/* body {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+} */
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+.slider {
+  background: #ffffff17;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  height: 220px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(90deg,#fff,#fff0);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 600px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 8s linear infinite;
+  animation: scroll 8s linear infinite;
+  display: flex;
+  column-gap: 10px;
+  width: calc(250px * 16);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slide img
+{
+  width:70%;
+  height: 46px;
+}
+
+
+/*------------- Media Query -------------- */
+
+/*---------Responsive Design for Desktop----------------*/
+
+@media screen and (max-width:1140px) and (min-width:992px) {
+    
+  .slider::before, .slider::after {
+     background: linear-gradient(90deg,#ffffff7d,#fff0);
+  }
+
+  .slider
+  {
+    padding-top: 2.5rem;
+  }
+}
+
+/*---------Responsive Design for Tab----------------*/
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+  .slider
+  {
+    padding-top: 2.5rem;
+  }
+
+  .slider::before
+  {
+    width: 300px;
+  }
+
+    .slider::after
+  {
+    width: 300px;
+  }
+
+}
+
+/*---------Responsive Design for Smartphone----------------*/
+
+@media screen and (max-width:767px) and (min-width:576px) {
+
+  .slider
+  {
+    padding-top: 2.5rem;
+  }
+
+  .slider::before
+  {
+    width: 200px;
+  }
+
+    .slider::after
+  {
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width:575px) and (min-width:360px) {
+
+  .slider
+  {
+    padding-top: 2.5rem;
+    margin-top: 0 !important;
+    height: 140px;
+  }
+
+  .slider::before
+  {
+    width: 200px;
+  }
+
+    .slider::after
+  {
+    width: 200px;
+  }
+
+  .slide img
+  {
+    width:60%;
+    height: 40px;
+  }
+
+  .slider .slide-track {
+    column-gap: 0;
+  }
+
+  .slider .slide
+  {
+    margin-left: -30px;
+  }
+
+}

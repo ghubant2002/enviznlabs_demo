@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Aquire bw0ox, sans-serif";
+    src: url(../webfonts/Aquire-BW0ox.otf);
+}
+
+@font-face {
+    font-family: "Epilogue, sans-serif";
+    src: url(../webfonts/Epilogue-Regular.ttf);
+  
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{box-sizing: border-box;}
+
+.en_footer_box
+{
+    background-color: #1b1b1b;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: "Epilogue, sans-serif";
+}
+
+.en_foot_logo
+{
+    font-family: "Aquire bw0ox, sans-serif";
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.en_foot_para
+{
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.items_left_gap
+{
+    margin-left: 3rem;
+}
+
+.en_footer_list
+{
+    list-style: none;
+    line-height: 2.4;
+}
+
+.en_footer_item
+{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .875rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid #e5e5e500;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.en_footer_item:hover
+{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.foot_copyright
+{
+    font-size: 14px;
+}
+
+.en_foot_line
+{
+    border-top: 0.5px solid #e5e5e5;
+}
+
+/*---------Responsive Design for Desktop----------------*/
+
+@media screen and (max-width:1140px) and (min-width:992px) {
+
+    .en_footer_box
+    {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .en_foot_logo
+    {
+        font-size: 1.2rem;
+    }
+
+    .items_left_gap
+    {
+        margin-left: 1.4rem;
+    }
+}
+
+/*---------Responsive Design for Tab----------------*/
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+    .en_footer_box
+    {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .en_foot_logo
+    {
+        font-size: 1.5rem;
+    }
+
+    .items_left_gap
+    {
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+    .items_left_gap2
+    {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .foot_flex_wrap
+    {
+        flex-wrap: wrap;
+    }
+
+    .item_align
+    {
+        text-align: center;
+        padding-right: 0 !important;
+    }
+
+    .en_foot_para
+    {
+        font-size: 20px;
+    }
+
+    .tab_align
+    {
+        justify-content: center !important;
+    }
+
+    .tab_size
+    {
+        font-size: 25px !important;
+    }
+
+    .en_footer_list
+    {
+        padding-left: 0 !important;
+    }
+
+    .en_footer_item
+    {
+        font-size: 20px;
+    }
+
+    .en_footer_list li
+    {
+        margin-bottom: 1rem;
+    }
+
+    .txt_size
+    {
+        font-size: 22px !important;
+    }
+
+    .foot_copyright
+    {
+        font-size: 16px;
+    }
+}
+
+/*---------Responsive Design for Smartphone----------------*/
+
+@media screen and (max-width:767px) and (min-width:576px) {
+
+    .en_footer_box
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .en_foot_logo
+    {
+        font-size: 1.4rem;
+        margin-bottom: 0 !important;
+    }
+
+    .items_left_gap
+    {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .items_left_gap2
+    {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .foot_flex_wrap
+    {
+        flex-wrap: wrap;
+        padding-top: 1rem !important;
+    }
+
+    .item_align
+    {
+        text-align: center;
+        padding-right: 0 !important;
+    }
+
+    .en_foot_para
+    {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .tab_align
+    {
+        justify-content: center !important;
+    }
+
+    .tab_size
+    {
+        font-size: 25px !important;
+    }
+
+    .en_footer_list
+    {
+        padding-left: 0 !important;
+    }
+
+    .en_footer_item
+    {
+        font-size: 18px;
+    }
+
+    .en_footer_list li
+    {
+        margin-bottom: 0.6rem;
+    }
+
+    .txt_size
+    {
+        font-size: 22px !important;
+    }
+
+    .foot_copyright
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:575px) and (min-width:360px) {
+
+        .en_footer_box
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .en_foot_logo
+    {
+        font-size: 1.4rem;
+        margin-bottom: 0 !important;
+    }
+
+    .items_left_gap
+    {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .items_left_gap2
+    {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .foot_flex_wrap
+    {
+        flex-wrap: wrap;
+        padding-top: 1rem !important;
+    }
+
+    .item_align
+    {
+        text-align: center;
+        padding-right: 0 !important;
+    }
+
+    .en_foot_para
+    {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .tab_align
+    {
+        justify-content: center !important;
+    }
+
+    .tab_size
+    {
+        font-size: 25px !important;
+    }
+
+    .en_footer_list
+    {
+        padding-left: 0 !important;
+    }
+
+    .en_footer_item
+    {
+        font-size: 16px;
+    }
+
+    .en_footer_list li
+    {
+        margin-bottom: 0.6rem;
+    }
+
+    .txt_size
+    {
+        font-size: 22px !important;
+    }
+
+    .foot_copyright
+    {
+        font-size: 14px;
+    }
+
+}
