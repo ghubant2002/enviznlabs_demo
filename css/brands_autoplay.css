@@ -81,7 +81,8 @@
 
   .slider
   {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -91,7 +92,8 @@
 
   .slider
   {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
   }
 
   .slider::before
@@ -112,7 +114,7 @@
 
   .slider
   {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
   }
 
   .slider::before
@@ -131,8 +133,8 @@
 
   .slider
   {
-    padding-top: 2.5rem;
-    margin-top: 0 !important;
+    padding-top: 1.1rem;
+    margin-top: 0.5rem !important;
     height: 140px;
   }
 
